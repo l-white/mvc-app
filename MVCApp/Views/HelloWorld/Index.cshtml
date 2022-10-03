@@ -1,0 +1,18 @@
+@model List<MVCApp.Models.DogViewModel>
+@*
+
+*@
+
+@{
+
+}
+
+<h1>Hello World</h1>
+<p>This is the index page of the HelloWorld Controller.</p>
+
+<ul>
+@foreach(var dog in Model)
+{
+   <li>This dog @dog.Name is @dog.Age years old.</li>
+}
+</ul>
